@@ -27,10 +27,10 @@ body * {
   @apply rounded-lg;
 }
 
-.ant-btn.main-btn {
-  @apply border-2 uppercase;
+.main-btn {
+  @apply rounded-lg border-2 uppercase;
 }
 
-.ant-btn.main-btn:not(:disabled) {
+.main-btn:not(:disabled) {
   @apply border-black;
 }
