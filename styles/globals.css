@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&display=swap');
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
@@ -12,4 +13,24 @@ svg {
 
 ::-webkit-scrollbar-thumb {
   @apply bg-gray-400 rounded-lg m-1;
+}
+
+body * {
+  font-family: 'Work Sans';
+}
+
+.main-text {
+  @apply uppercase font-semibold text-base;
+}
+
+.ant-btn {
+  @apply rounded-lg;
+}
+
+.ant-btn.main-btn {
+  @apply border-2 uppercase;
+}
+
+.ant-btn.main-btn:not(:disabled) {
+  @apply border-black;
 }

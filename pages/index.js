@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import Link from 'next/link'
+import Landing from '/components/main-page/Landing.jsx'
 
 export default function Home() {
   return (
@@ -8,9 +8,7 @@ export default function Home() {
       <Head>
         <title>NFT Loan Market</title>
       </Head>
-      <Link href="/mint">
-        <a>Mint</a>
-      </Link>
+      <Landing />
     </div>
   )
 }

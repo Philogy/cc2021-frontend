@@ -1,15 +1,14 @@
 import React from 'react'
-import '/styles/globals.css'
 import 'antd/dist/antd.css'
+import '/styles/globals.css'
 
-import { DAppProvider } from '@usedapp/core'
-import { config } from '/src/usedapp.js'
+import { UseDAppProvider } from '/src/usedapp.js'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <DAppProvider config={config}>
+    <UseDAppProvider>
       <Component {...pageProps} />
-    </DAppProvider>
+    </UseDAppProvider>
   )
 }
 
