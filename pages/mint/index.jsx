@@ -7,7 +7,7 @@ import ERC20Minter from './ERC20Minter.jsx'
 
 function Mint() {
   return (
-    <div className="p-4">
+    <div className="p-4 h-screen">
       <div className="main-text p-2 flex justify-between">
         <Link href="/">
           <div className="flex items-center space-x-2 hover:text-blue-400 hover:cursor-pointer">

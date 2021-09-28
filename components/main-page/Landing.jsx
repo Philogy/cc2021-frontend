@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { ArrowRightOutlined, InfoCircleOutlined } from '@ant-design/icons'
 import { Button } from 'antd'
 import ConnectMetamaskButton from '../ConnectMetamaskButton.jsx'
+import Logo from '../Logo.jsx'
 
 function Landing() {
   const centralLinks = ['mint', 'about', 'faq', 'contact']
@@ -10,11 +11,7 @@ function Landing() {
   return (
     <section className="p-12 h-screen flex flex-col">
       <header className="flex justify-between">
-        <Link href="/">
-          <div className="ant-btn main-btn p-5 w-40 flex items-center justify-center">
-            <span className="main-text">Logo Area</span>
-          </div>
-        </Link>
+        <Logo />
         <div className="flex items-center">
           <div className="mr-4 flex">
             {centralLinks.map((link) => (
